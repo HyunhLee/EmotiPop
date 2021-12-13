@@ -16,6 +16,7 @@ import { WebView } from 'react-native-webview';
 import CalendarContainer from './src/pages/Calendar/CalendarContainer';
 import MyPage from './src/pages/User/MyPage';
 import Resign from './src/pages/User/Resign';
+import ChooseRoom from './src/pages/Beans/ChooseRoom';
 
 const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk, logger)));
 
@@ -24,8 +25,9 @@ export default function App() {
     <Provider store={store}>
       <StatusBar style='dark' />
         {/* <ChangeStack /> */}
-        <MyPage />
+        {/* <MyPage /> */}
         {/* <Resign /> */}
+        <ChooseRoom />
     </Provider>
   );
 }
