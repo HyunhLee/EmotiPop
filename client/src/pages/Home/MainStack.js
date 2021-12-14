@@ -18,6 +18,7 @@ import ListOfMyNegativeBeans from '../Beans/ListOfMyNegativeBeans';
 import ListOfMyPositiveBeans from '../Beans/ListOfMyPositiveBeans';
 import BeansContent from '../Beans/BeansContent';
 import ChooseRoom from '../Beans/ChooseRoom';
+import Resign from '../User/Resign'
 
 export default function MainStack() {
   const Stack = createStackNavigator();
@@ -33,7 +34,6 @@ export default function MainStack() {
         headerShown: false,
       }}
     >
-
       <Stack.Screen
         name="MainHome"
         component={MainHome}
@@ -41,6 +41,7 @@ export default function MainStack() {
           headerShown: false,
         }}
       />
+
       <Stack.Screen
         name="ChartContainer"
         component={ChartContainer}
@@ -87,16 +88,18 @@ export default function MainStack() {
         name="ShowContentModal"
         component={ShowContentModal}
         options={{
-         headerShown: false,
+          headerShown: false,
         }}
       />
+
       <Stack.Screen
         name="NegPop"
         component={NegPop}
         options={{
           headerShown: false,
-          }}
+        }}
       />
+
       <Stack.Screen
         name="PosPop"
         component={PosPop}
@@ -111,6 +114,7 @@ export default function MainStack() {
           headerShown: false,
         }}
       />
+
       <Stack.Screen
         name="CalendarContainer"
         component={CalendarContainer}
@@ -142,6 +146,13 @@ export default function MainStack() {
       <Stack.Screen
         name="BeansContent"
         component={BeansContent}
+        options={{
+          headerShown: false,
+        }}
+      />
+      <Stack.Screen
+        name="Resign"
+        component={Resign}
         options={{
           headerShown: false,
         }}

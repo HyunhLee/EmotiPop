@@ -2,7 +2,7 @@ import React from 'react';
 import Styled from 'styled-components/native';
 // import { Link } from 'react-router-dom';
 import Btn from '../User/Button';
-import { View, Text, StyleSheet, Button, TouchableOpacity, Image, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, Button, TouchableOpacity, ImageBackground } from 'react-native';
 import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather } from '@expo/vector-icons';
@@ -36,7 +36,7 @@ export default function ChooseRoom({ navigation, route }) {
   return (
     <Container>
       <ImageBackgrounds source={require('../../img/background.jpeg')} resizemode="cover">
-        <TouchableOpacity activeOpacity={0.8} style={{ position: 'absolute', width: 35, height: 35 }} onPress={goBack}>
+        <TouchableOpacity activeOpacity={0.8} style={{ marginRight: 300, width: 35, height: 35 }} onPress={goBack}>
           <Text>
             <Feather name="arrow-left" size={35} color="black" />
           </Text>
@@ -56,8 +56,19 @@ const Container = Styled.View`
   flex: 1;
 `;
 
+// const Blue = Styled.View`
+//   width: 150px;
+//   height: 150px;
+//   background-color: skyblue;
+// `;
+// const Red = Styled.View`
+//   width: 150px;
+//   height: 150px;
+//   background-color: pink;
+// `;
+
 const ImageBackgrounds = Styled.ImageBackground`
-  /* flex-direction: row; */
+  // flex-direction: row;
   justify-content: space-around;
   align-items: center;
   height: 100%;

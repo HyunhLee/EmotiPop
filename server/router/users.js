@@ -56,7 +56,4 @@ router.get('/me', usersController.me.get);
 // POST /users/findme
 router.post('/findme', usersController.findme.post);
 
-// POST /users/reset
-router.post('/reset/:token', usersController.findme.reset);
-
 module.exports = router;
