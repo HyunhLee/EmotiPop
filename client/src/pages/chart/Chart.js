@@ -18,7 +18,6 @@ export default function Chart({ beans }) {
           </SubTitle>
           <ProgressContainer>
             <ProgressBar style={{ width: `${Object.values(item)}%` }} />
-            {/* <LinearGradient colors={['red', 'gold']} style={{width: `${Object.values(item)}%`}}/> */}
           </ProgressContainer>
         </Item>
       ))}

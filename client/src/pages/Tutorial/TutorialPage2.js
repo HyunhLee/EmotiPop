@@ -46,7 +46,7 @@ const InnerBackground = styled.ImageBackground`
   height: 87%;
   width: 100%;
   top: 250px;
-  left: 27px;
+  left: 35px;
 `;
 
 const Page = styled.View`
