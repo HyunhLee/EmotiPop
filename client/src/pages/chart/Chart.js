@@ -4,7 +4,6 @@ import { useSelector, useDispatch } from 'react-redux';
 import styled from 'styled-components/native';
 import Btn from '../User/Button';
 import axios from 'axios';
-import { LinearGradient } from 'expo-linear-gradient';
 
 export default function Chart({ beans }) {
   // console.log(beans)
