@@ -27,7 +27,7 @@ module.exports = {
             )
 
             const user = await Users.findOne({
-                where: { email }
+                where: { email: req.body.email }
             })
 
             // console.log(user);
