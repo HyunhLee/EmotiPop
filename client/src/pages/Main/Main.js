@@ -73,6 +73,7 @@ export default function Main({ navigation }) {
       },
       withCredentials: true,
     });
+    // console.log('---', weeklydata.data);
     if (weeklydata.data.message === 'Negative Gourd Win') {
       navigation.navigate('NegPop');
     } else if (weeklydata.data.message === 'Positive Gourd Win') {
