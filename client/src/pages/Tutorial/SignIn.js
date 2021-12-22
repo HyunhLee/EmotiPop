@@ -110,7 +110,7 @@ export default function SignIn({navigation}) {
           : (
             <LoginForm> 
                 <Header>LOGIN</Header>
-                <SubHead>TO CONTINUE</SubHead>
+                {/* <SubHead>TO CONTINUE</SubHead> */}
               <Input 
                 placeholder="EMAIL" 
                 value={email}
@@ -137,9 +137,9 @@ export default function SignIn({navigation}) {
                   <MiddleText>비밀번호를 잊으셨나요??</MiddleText>
                 </TouchableOpacity>
               </MiddleContainer>
-              <TouchableOpacity>
+              {/* <TouchableOpacity>
                   <MiddleText onPress={googleOauth}>GOOGLE로 로그인 하기</MiddleText>
-                </TouchableOpacity>
+                </TouchableOpacity> */}
               {
                 !wrongInfo ? <Warn>이메일 혹은 비밀번호를 정확히 입력했는지 확인해 주세요</Warn> : null 
               }

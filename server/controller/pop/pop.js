@@ -51,6 +51,10 @@ module.exports = {
       return res.status(201).json({
         message: 'Negative Gourd Win',
       });
+    } else if (posCount === 0 && negCount === 0) {
+      return res.status(201).json({
+        message: 'Nothing happened',
+      });
     } else if (posCount === negCount) {
       return res.status(201).json({
         message: 'Positive & Negative Draw',
